@@ -82,4 +82,7 @@ ALTER TABLE users CHANGE id user_id INT(30) NOT NULL AUTO_INCREMENT;
 
 -- 칼럼 조건 변경
 ALTER TABLE users MODIFY sub TEXT;
+
+-- 칼럼 삭제
+ALTER TABLE users DROP COLUMN <column_name>;
 ```
