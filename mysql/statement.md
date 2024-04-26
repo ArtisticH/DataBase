@@ -50,9 +50,12 @@ SHOW TABLES;
 SHOW DATABASES;
 ```
 
-### 테이블 제거
+### 테이블 제거, 데이터 내용 삭제
 ```sql
 DROP TABLE users;
+
+-- 테이블 데이터 내용 다 삭제
+DELETE FROM 테이블이름;
 ```
 
 ### 데이터 삽입, 업데이트, 변경, 삭제, 조회
@@ -85,4 +88,7 @@ ALTER TABLE users MODIFY sub TEXT;
 
 -- 칼럼 삭제
 ALTER TABLE users DROP COLUMN <column_name>;
+
+-- 칼럼의 AUTO_INCREMENT = 1;로 재설정
+ALTER TABLE 테이블이름 AUTO_INCREMENT = 1;
 ```
