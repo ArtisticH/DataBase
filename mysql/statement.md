@@ -75,7 +75,7 @@ SELECT id, title FROM users WHERE married = 1 AND(OR) age > 30;
 SELECT id, title FROM users ORDER BY age DESC LIMIT 1 OFFSET 1;
 ```
 
-### 테이블 변경
+### 칼럼
 ```sql
 -- 칼럼 추가
 ALTER TABLE users ADD names TEXT NOT NULL AFTER explanation;
